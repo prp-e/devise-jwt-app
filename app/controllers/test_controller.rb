@@ -2,7 +2,7 @@ class TestController < ApplicationController
     before_action :authenticate_user! 
 
     def show 
-        render json: {"message" => "It works", "ID" => current_user.id }
+        render json: {"message" => "It works", "current_user" => current_user }
     end 
 
 end
